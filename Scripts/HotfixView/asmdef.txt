@@ -1,0 +1,9 @@
+{
+    "references": [
+        "ET.Core",
+        "ET.Model",
+        "ET.Hotfix",
+        "ET.ModelView",
+        "XET.YooAssets"
+    ]
+}
