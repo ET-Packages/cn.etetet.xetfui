@@ -54,12 +54,6 @@ namespace ET.Client
             self.UIAssetManager = null;
             self.AssetLoader = null;
 
-            var resLoaderCom = self.Scene().GetComponent<ResourcesLoaderComponent>();
-            foreach (string location in self.Locations.Values)
-            {
-                resLoaderCom.UnloadAsset(location);
-            }
-            
             self.Locations.Clear();
         }
         
