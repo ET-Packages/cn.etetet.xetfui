@@ -85,6 +85,8 @@ namespace ET
                     if (!string.IsNullOrEmpty(path))
                     {
                         fuiCodeSpawnConfig.FGUIProjectDir = path;
+                        EditorUtility.SetDirty(fuiCodeSpawnConfig);
+                        AssetDatabase.SaveAssets();
                     }
                 }
 
@@ -106,6 +108,8 @@ namespace ET
                     if (!string.IsNullOrEmpty(path))
                     {
                         fuiCodeSpawnConfig.PackageDir = path;
+                        EditorUtility.SetDirty(fuiCodeSpawnConfig);
+                        AssetDatabase.SaveAssets();
                     }
                 }
 
