@@ -14,7 +14,11 @@
   },
   "relatedPackages": {},
   "gitDependencies": {
-    "cn.etetet.core": "https://github.com/ET-Packages/cn.etetet.core.git#0.0.1",
-    "cn.etetet.xetyooassets": "https://github.com/ET-Packages/cn.etetet.xetyooassets.git#0.0.1"
+    "cn.etetet.core": "0.0.5",
+    "cn.etetet.xetyooassets": "0.0.1"
+  },
+  "publishConfig":
+  {
+    "registry": "https://npm.pkg.github.com/@ET-Packages"
   }
 }
