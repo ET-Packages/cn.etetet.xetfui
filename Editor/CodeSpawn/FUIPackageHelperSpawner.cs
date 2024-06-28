@@ -31,7 +31,7 @@ namespace FUIEditor
                 sb.AppendLine($"{GetTabs(3)}{{\"{packageInfo.Id}\", \"{packageInfo.Name}\"}},");
             }
             
-            sb.AppendLine($"{GetTabs(3)}//<last line>");
+            sb.AppendLine($"{GetTabs(3)}// <last line>");
             
             sb.AppendLine($"{GetTabs(2)}}};");
             sb.AppendLine();
@@ -73,7 +73,7 @@ namespace FUIEditor
                 oldContent = regex.Replace(oldContent, "");
             }
 
-            int index = oldContent.IndexOf($"{GetTabs(3)}//<last line>", StringComparison.Ordinal);
+            int index = oldContent.IndexOf($"{GetTabs(3)}// <last line>", StringComparison.Ordinal);
             if (index == -1)
             {
                 GenerateMappingFile();
