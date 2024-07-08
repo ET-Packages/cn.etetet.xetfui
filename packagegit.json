@@ -1,4 +1,18 @@
 {
 "Id": 1011,
-"Name": "XETFUI"
+"Name": "XETFUI",
+"ScriptsReferences": {
+  "ModelView": [
+    "ET.Core",
+    "ET.Loader",
+    "ET.Model"
+  ],
+  "HotfixView": [
+    "ET.Core",
+    "ET.Model",
+    "ET.Hotfix",
+    "ET.ModelView",
+    "ET.YooAssets"
+  ]
+}
 }

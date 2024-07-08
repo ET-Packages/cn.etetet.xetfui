@@ -1,7 +1,0 @@
-{
-    "references": [
-        "ET.Core",
-        "ET.Loader",
-        "ET.Model"
-    ]
-}
