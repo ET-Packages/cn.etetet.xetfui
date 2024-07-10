@@ -28,7 +28,7 @@ namespace ET
             }
         } 
         
-        [MenuItem("XET/FairyGUI 代码导出", false)]
+        [MenuItem("ET/XET/FairyGUI 代码导出", false, 2)]
         public static void ShowWindow()
         {
             GetWindow<FUICodeSpawnEditor>();
