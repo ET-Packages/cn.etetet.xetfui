@@ -1,7 +1,7 @@
 {
   "name": "cn.etetet.xetfui",
   "displayName": "XET.FUI",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "unity": "2022.3",
   "description": "FairyGUI code spawner for ET。",
   "author": {
@@ -14,8 +14,8 @@
   },
   "relatedPackages": {},
   "dependencies": {
-    "cn.etetet.core": "0.0.11",
-    "cn.etetet.xetyooassets": "0.0.4"
+    "cn.etetet.core": "0.0.16",
+    "cn.etetet.xetyooassets": "0.0.5"
   },
   "publishConfig":
   {

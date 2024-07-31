@@ -81,7 +81,7 @@ namespace FUIEditor
                 return string.Empty;
             var res = "";
             for (var i = 0; i < count; i++)
-                res += "   ";
+                res += "    ";
             return res;
         }
         
