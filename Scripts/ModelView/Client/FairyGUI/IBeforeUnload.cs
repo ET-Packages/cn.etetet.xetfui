@@ -29,6 +29,6 @@ namespace ET.Client
             this.Hide((T)o);
         }
 
-        protected abstract void Hide(T self);
+        protected abstract void BeforeUnload(T self);
     }
 }
