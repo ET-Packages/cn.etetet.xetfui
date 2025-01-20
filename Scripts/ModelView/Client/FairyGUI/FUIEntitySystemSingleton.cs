@@ -206,7 +206,7 @@ namespace ET.Client
         
         public void Hide(Entity component)
         {
-            if (component is not IShow)
+            if (component is not IHide)
             {
                 return;
             }

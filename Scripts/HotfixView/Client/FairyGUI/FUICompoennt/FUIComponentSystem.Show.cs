@@ -65,22 +65,20 @@ namespace ET.Client
         /// </summary>
         private static async ETTask<FUIEntity> InnerShowPanelAsync<T>(this FUIComponent self, PanelId panelId) where T: Entity, IAwake, new()
         {
-            if (!self.ShowingPanels.Add(panelId))
+            using (await self.Root().GetComponent<CoroutineLockComponent>().Wait(CoroutineLockType.ShowingPanels, (int)panelId, 3000))
             {
-                return null;
-            }
+                var fuiEntity = self.GetFirstFUIEntityByPanelId(panelId);
+                if (fuiEntity != null)
+                {
+                    // 这样会再次调用 FairyGUI 的 AddChild，会让显示的界面显示在最上面
+                    fuiEntity.SetPanelType(fuiEntity.GetPanelType());
+                    self.SetPanelVisible(fuiEntity);
+                    return fuiEntity;
+                }
 
-            var fuiEntity = self.GetFirstFUIEntityByPanelId(panelId);
-            if (fuiEntity != null)
-            {
-                self.SetPanelVisible(fuiEntity);
-                self.ShowingPanels.Remove(panelId);
+                fuiEntity = await self.CreatePanelAsync(type, panelId);
                 return fuiEntity;
             }
-
-            fuiEntity = await self.CreatePanelAsync<T>(panelId);
-            self.ShowingPanels.Remove(panelId);
-            return fuiEntity;
         }
         
         /// <summary>

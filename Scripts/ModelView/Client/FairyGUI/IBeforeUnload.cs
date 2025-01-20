@@ -26,9 +26,9 @@ namespace ET.Client
 
         public void Run(Entity o)
         {
-            this.Hide((T)o);
+            this.BeforeUnload((T)o);
         }
 
-        protected abstract void Hide(T self);
+        protected abstract void BeforeUnload(T self);
     }
 }

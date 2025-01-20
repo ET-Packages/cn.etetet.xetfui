@@ -150,6 +150,12 @@ namespace ET.Client
             PanelId panelId = self.GetPanelIdByGeneric<T>();
             FUIEntity fuiEntity = self.GetFirstFUIEntityByPanelId(panelId);
 
+            if (fuiEntity == null)
+            {
+                Log.Warning($"界面不存在 {panelId}");
+                return;
+            }
+
             FUIEntity showFuiEntity = self.InnerHidePanel(fuiEntity);
             FUIEntitySystemSingleton.Instance.Hide(fuiEntity.Component);
             if (showFuiEntity != null)
@@ -162,6 +168,12 @@ namespace ET.Client
         {
             PanelId panelId = self.GetPanelIdByGeneric<T>();
             FUIEntity fuiEntity = self.GetFirstFUIEntityByPanelId(panelId);
+            
+            if (fuiEntity == null)
+            {
+                Log.Warning($"界面不存在 {panelId}");
+                return;
+            }
             
             FUIEntity showFuiEntity = self.InnerHidePanel(fuiEntity);
             FUIEntitySystemSingleton.Instance.Hide(fuiEntity.Component);
@@ -183,6 +195,12 @@ namespace ET.Client
             PanelId panelId = self.GetPanelIdByGeneric<T>();
             FUIEntity fuiEntity = self.GetFirstFUIEntityByPanelId(panelId);
             
+            if (fuiEntity == null)
+            {
+                Log.Warning($"界面不存在 {panelId}");
+                return;
+            }
+            
             FUIEntity showFuiEntity = self.InnerHidePanel(fuiEntity);
             FUIEntitySystemSingleton.Instance.Hide(fuiEntity.Component);
             if (showFuiEntity != null)
@@ -202,6 +220,12 @@ namespace ET.Client
         {
             PanelId panelId = self.GetPanelIdByGeneric<T>();
             FUIEntity fuiEntity = self.GetFirstFUIEntityByPanelId(panelId);
+            
+            if (fuiEntity == null)
+            {
+                Log.Warning($"界面不存在 {panelId}");
+                return;
+            }
             
             FUIEntity showFuiEntity = self.InnerHidePanel(fuiEntity);
             FUIEntitySystemSingleton.Instance.Hide(fuiEntity.Component);
@@ -223,6 +247,12 @@ namespace ET.Client
             PanelId panelId = self.GetPanelIdByGeneric<T>();
             FUIEntity fuiEntity = self.GetFirstFUIEntityByPanelId(panelId);
             
+            if (fuiEntity == null)
+            {
+                Log.Warning($"界面不存在 {panelId}");
+                return;
+            }
+            
             FUIEntity showFuiEntity = self.InnerHidePanel(fuiEntity);
             FUIEntitySystemSingleton.Instance.Hide(fuiEntity.Component);
             if (showFuiEntity != null)
@@ -242,6 +272,12 @@ namespace ET.Client
         {
             PanelId panelId = self.GetPanelIdByGeneric<T>();
             FUIEntity fuiEntity = self.GetFirstFUIEntityByPanelId(panelId);
+            
+            if (fuiEntity == null)
+            {
+                Log.Warning($"界面不存在 {panelId}");
+                return;
+            }
             
             FUIEntity showFuiEntity = self.InnerHidePanel(fuiEntity);
             FUIEntitySystemSingleton.Instance.Hide(fuiEntity.Component);

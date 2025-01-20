@@ -23,8 +23,5 @@ namespace ET.Client
         public Stack<EntityRef<FUIEntity>> HidePanelsStack = new();
 
         public Dictionary<long, EntityRef<FUIEntity>> IdToEntity = new();
-        
-        // 记录正在显示的界面，避免多次打开同一种界面
-        public HashSet<PanelId> ShowingPanels = new();
     }
 }
