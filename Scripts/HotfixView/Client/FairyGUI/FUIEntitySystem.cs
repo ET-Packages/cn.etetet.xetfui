@@ -22,6 +22,8 @@ namespace ET.Client
                 self.GComponent.Dispose();
                 self.GComponent = null;
             }
+            
+            self.IsUsingStack = false;
         }
         
         public static void SetRoot(this FUIEntity self, GComponent rootGComponent)
