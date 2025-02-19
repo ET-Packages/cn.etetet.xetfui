@@ -25,6 +25,17 @@ namespace ET.Client
             
             self.IsUsingStack = false;
         }
+
+        public static void SetPanelType(this FUIEntity self, UIPanelType panelType)
+        {
+            self.panelType = panelType;
+            self.SetRoot(FUIRootHelper.GetTargetRoot(self.Root(), panelType));
+        }
+
+        public static UIPanelType GetPanelType(this FUIEntity self)
+        {
+            return self.panelType;
+        }
         
         public static void SetRoot(this FUIEntity self, GComponent rootGComponent)
         {
